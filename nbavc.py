@@ -25,7 +25,7 @@ class Data:
 
         self.data = json.loads(response.text)
 
-    def all_teams(self):
+    def all_teams(self):#list of all the teams that are playing
         teamsname = self.data['team1']
         versus = []
 
@@ -71,3 +71,9 @@ def main():
 
         if text.find(END_PHRASE):
             break
+
+
+
+#To do:
+#Initialize regex patterns
+#Test speech recognition
